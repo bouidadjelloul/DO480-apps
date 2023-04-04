@@ -1,4 +1,4 @@
 kind: Kustomization
 bases: 
   - ../../base
-namePrefix: apac-
+namePrefix: -apac
