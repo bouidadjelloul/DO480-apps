@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cluster-mysql
+  name: mysql
   labels:
     app: todonodejs
     name: mysql
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - image: mysql
-        name: mysql
+        name: cluster-mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: r00tpa55
